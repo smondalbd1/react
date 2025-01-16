@@ -1,6 +1,8 @@
 function Header(){
     return(
-        <div>Header</div>
+        <>
+        <h1 className="text-xl font-bold mb-4">TapaScript Cars</h1>
+        </>
     )
 }
 

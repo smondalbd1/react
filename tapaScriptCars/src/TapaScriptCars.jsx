@@ -4,7 +4,7 @@ import Search from "./Search"
 
 function TapaScriptCars() {
   return (
-    <div>
+    <div className="p-7 bg-slate-100 min-h-screen">
         <Header />
         <Search />
         <CarList />
