@@ -51,11 +51,14 @@ const Cars = [
 function TapaScriptCars() {
 
   const [searchTerm, setSearchTerm] = useState("");
+  const [showPremium, setshowPremium] = useState("");
+console.log(showPremium);
+
   return (
     <div className="p-7 bg-slate-100 min-h-screen">
         <Header />
-        <Search searchTerm={searchTerm} onSearchCar={setSearchTerm}/>
-        <CarList searchTerm={searchTerm} cars={Cars}/>
+        <Search searchTerm={searchTerm} onSearchCar={setSearchTerm} showPremium={showPremium} onSetShowPrmium ={setshowPremium}/>
+        <CarList searchTerm={searchTerm} cars={Cars} showPremium={showPremium}/>
     </div>
   )
 }

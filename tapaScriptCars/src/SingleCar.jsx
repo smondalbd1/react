@@ -20,11 +20,11 @@ function SingleCar({ car }) {
           <strong>Price:</strong> {car.price}
         </p>
       )}
-      {car.isPremium && (
+     
         <p className="text-black">
           <strong>Premium:</strong> {car.isPremium ? "Yes" : "No"}
         </p>
-      )}
+   
     </div>
   );
 }
